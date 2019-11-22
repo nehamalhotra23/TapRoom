@@ -59,7 +59,7 @@ function NewKombucha(props) {
         <input
           type='text'
           id='photo'
-          placeholder='photo'
+          placeholder='Add Image Url'
           ref={(input) => { _photo = input; }} />
         <select className="form-control" ref={(select) => { _kombucha = select; }}>
           <option > Select your Brand...</option>

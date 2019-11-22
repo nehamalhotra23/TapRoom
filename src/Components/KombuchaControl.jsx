@@ -5,10 +5,11 @@ import PropTypes from 'prop-types';
 function KombuchaControl(props) {
   var flex = {
     display: 'flex',
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+    marginTop: '100px',
+    padding: "20px"
   };
   var margin = {
-    marginTop: '50px',
     color: 'red'
   };
 
@@ -25,8 +26,8 @@ function KombuchaControl(props) {
         {props.kombuchalist.map((kombucha) =>
           <Kombucha
             name={kombucha.name}
-            kombucha={kombucha.kombucha}
             price={kombucha.price}
+            photo={kombucha.photo}
             flavour={kombucha.flavour}
             kombucha={kombucha.kombucha}
             key={kombucha.id} />

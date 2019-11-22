@@ -3,12 +3,12 @@ import { Link } from 'react-router-dom';
 
 function Navbar() {
   var navigation = {
-    paddingTop: '30px',
-    paddingBottom: '30px',
-    position: 'absolute',
-    top: '0',
-    width: '100%',
-    zIndex: '1',
+    // paddingTop: '30px',
+    // paddingBottom: '30px',
+    // position: 'absolute',
+    // top: '0',
+    // width: '100%',
+    // zIndex: '1',
     backgroundColor: 'rgba(0, 0, 0, 0.5)'
   };
   var logo = {
@@ -42,14 +42,12 @@ function Navbar() {
       textDecoration: 'underline'
     }
   };
-  var navDiv = {
-    marginRight: '5%'
-  };
+  
   return (
     <div style={navigation}>
       <div className="header">
         <nav>
-          <div style={navDiv}>
+          <div >
             <Link to="/" style={logo}>Kombucha </Link>
             <Link to="/KombuchaControl" style={modelX}>GT's</Link>
             <Link to="/NewKombucha" style={center}>Add new Kombucha</Link>
