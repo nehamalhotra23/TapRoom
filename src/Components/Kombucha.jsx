@@ -5,17 +5,17 @@ class Kombucha extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      
+
     };
   }
 
-  render () {
+  render() {
     var card = {
       margin: '20px',
       width: '300px',
       borderRadius: '12px',
       border: 'solid 1px rgba(255, 255, 255, 0.2)',
-      webkitBoxShadow:' 4px 5px 5px - 3px #000000',
+      webkitBoxShadow: ' 4px 5px 5px - 3px #000000',
       boxShadow: '4px 5px 5px - 3px #000000',
       overflow: 'hidden',
       padding: '10px',
@@ -31,7 +31,7 @@ class Kombucha extends React.Component {
       boxShadow: '0px 0px 6px - 2px #000000',
     };
     return (
-        
+
       <div style={card} className="card">
         <div className="card-image"></div>
         <img style={image} src={this.props.photo} />
@@ -39,9 +39,9 @@ class Kombucha extends React.Component {
         <p>Name: {this.props.name}</p>
         <p>Price: {this.props.price}</p>
         <p>Brand: {this.props.kombucha}</p>
-        <p>description: {this.props.flavour}</p>
-      </div> 
-       
+        <p>Flavour: {this.props.flavour}</p>
+      </div>
+
     );
   }
 }

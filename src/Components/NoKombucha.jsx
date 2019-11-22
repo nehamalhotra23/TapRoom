@@ -3,11 +3,12 @@ import UpArrow from '../assets/img/arrow.gif';
 
 function NoKombucha() {
   var align = {
-    marginTop: '200px',
+    marginTop: '100px',
     marginLeft: '300px'
   };
   var h1 = {
-    marginLeft: '300px' 
+    marginLeft: '350px',
+    color:" brown"
   };
   return (
     <div className="center">
