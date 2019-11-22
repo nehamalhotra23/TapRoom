@@ -15,7 +15,7 @@ function KombuchaControl(props) {
   };
   var back = {
     backgroundColor: '#ffae42'
-  }
+  };
 
   function KombuchaListEmpty() {
     console.log(props.kombuchalist);

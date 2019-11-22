@@ -5,9 +5,7 @@ function Navbar() {
   var navigation = {
     paddingTop: '30px',
     paddingBottom: '30px',
-    position: 'absolute',
     top: '0',
-    width: '500%',
     zIndex: '1',
     backgroundColor: 'rgba(0, 0, 0, 0.5)'
   };
@@ -20,6 +18,17 @@ function Navbar() {
     color: '#fff'
   };
 
+  var modelX = {
+    textDecoration: 'none',
+    padding: '10px',
+    color: '#fff',
+    fontFamily: 'Arial',
+    fontWeight: '900',
+    marginLeft: '20vmax',
+    '&:hover': {
+      textDecoration: 'underline'
+    }
+  };
   var center = {
     textDecoration: 'none',
     padding: '10px',
@@ -30,23 +39,9 @@ function Navbar() {
       textDecoration: 'underline'
     }
   };
-  var modelX = {
-    textDecoration: 'none',
-    padding: '10px',
-    color: '#fff',
-    fontFamily: 'Arial',
-    fontWeight: '900',
-    marginLeft: '30vmax',
-    marginRight: 'auto',
-    '&:hover': {
-      textDecoration: 'underline'
-    }
-    
-  };
   var navDiv = {
     marginRight: '5%'
   };
-  
   return (
     <div style={navigation}>
       <div className="header">
@@ -54,8 +49,8 @@ function Navbar() {
           <div style={navDiv}>
             <Link to="/" style={logo}>Kombucha </Link>
             <Link to="/KombuchaControl" style={modelX}>GT's</Link>
-            <Link to="/NewKombucha" style={center}>Add new Kombucha</Link>
-          </div>
+            <Link to="/NewKombucha" style={modelX}>Add new Kombucha</Link>
+           </div>
         </nav>
       </div>
     </div>

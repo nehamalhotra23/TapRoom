@@ -32,7 +32,7 @@ class Kombucha extends React.Component {
     };
     return (
         
-       <div style={card} className="card">
+      <div style={card} className="card">
         <div className="card-image"></div>
         <img style={image} src={this.props.photo} />
         <div className="card-image"></div>
@@ -42,7 +42,7 @@ class Kombucha extends React.Component {
         <p>description: {this.props.flavour}</p>
       </div> 
        
-     );
+    );
   }
 }
 Kombucha.propTypes = {
