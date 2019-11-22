@@ -31,7 +31,7 @@ function NewKombucha(props) {
   var background = {
     backgroundColor: '#ffae42',
     color: 'brown',
-    marginTop: '300px',
+    marginTop: '100px',
   };
   var form = {
     marginTop: '30px',

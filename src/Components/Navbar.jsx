@@ -29,16 +29,6 @@ function Navbar() {
       textDecoration: 'underline'
     }
   };
-  var center = {
-    textDecoration: 'none',
-    padding: '10px',
-    color: '#fff',
-    fontFamily: 'Arial',
-    fontWeight: '900',
-    '&:hover': {
-      textDecoration: 'underline'
-    }
-  };
   var navDiv = {
     marginRight: '5%'
   };
