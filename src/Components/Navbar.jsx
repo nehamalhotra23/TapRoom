@@ -5,7 +5,9 @@ function Navbar() {
   var navigation = {
     paddingTop: '30px',
     paddingBottom: '30px',
+    position: 'absolute',
     top: '0',
+    width: '88%',
     zIndex: '1',
     backgroundColor: 'rgba(0, 0, 0, 0.5)'
   };

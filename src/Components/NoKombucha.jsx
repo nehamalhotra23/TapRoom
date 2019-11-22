@@ -8,7 +8,7 @@ function NoKombucha() {
   };
   var h1 = {
     marginLeft: '350px',
-    color:" brown"
+    color:' brown'
   };
   return (
     <div className="center">

@@ -21,7 +21,6 @@ function NewKombucha(props) {
     _kombucha.value = '';
     
   }
-
   var image = {
     height: '600px',
     width: '400px',
@@ -50,22 +49,22 @@ function NewKombucha(props) {
             type='text'
             id='name'
             placeholder='name'
-            ref={(input) => { _name = input; }} /> <hr/>
+            ref={(input) => { _name = input; }} required/> <hr/>
           <input
             type='text'
             id='price'
             placeholder='price'
-            ref={(input) => { _price = input; }} /> <hr/>
+            ref={(input) => { _price = input; }} required /> <hr/>
           <input
             type='text'
             id='flavour'
             placeholder='flavour'
-            ref={(input) => { _flavour = input; }} /> <hr/>
+            ref={(input) => { _flavour = input; }} required/> <hr/>
           <input
             type='text'
             id='photo'
             placeholder='Add Image Url'
-            ref={(input) => { _photo = input; }} /> <hr/>
+            ref={(input) => { _photo = input; }} required/> <hr/>
           <select className="form-control" ref={(select) => { _kombucha = select; }}>
             <option > Select your Brand...</option>
             <option value='Gt'  >Gt's</option>

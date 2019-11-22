@@ -12,14 +12,13 @@ _In this application Employees can keep track of inventory of kombucha and Coust
 
 * _Clone this repository https://github.com/nehamalhotra23/TapRoom_
 * _Run "npm intall" in the root directory_
-* _Run "npm run start" and navigate to  http://localhost:8080/#/_
+* _Run "npm run start" and navigate to local host displayed in terminal_
 
 ## Specs
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| Allow user to view list of kombucha in different brands  |  click on "GT's" in navigation bar |  GT's all flavours of kombucha will be displayed |
+| Allow user to view list of kombucha in different brands  |  click on "List of kegs" in navigation bar |  List of all kombuchas with flavour and information will be displayed |
 | Employeess can add new kombucha in the list |  click on "Add new kombucha" in navigation bar |A form will be displayed to add new kombucha.|
-| Employess can login and can Create new account | click on "Sign In" in navigation bar  | Sign In Form will be displayed |
 
 ![Diagram](./image.png)
 ## Known Bugs
