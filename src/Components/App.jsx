@@ -8,9 +8,10 @@ import KombuchaControl from './KombuchaControl';
 class App extends React.Component{
   constructor(props){
     super(props);
-    
+     
     this.state = {
-      MasterList: []
+      MasterList: [],
+      MasterList2: []
     };
     this.handleNewKombucha = this.handleNewKombucha.bind(this);
   }
@@ -28,6 +29,7 @@ class App extends React.Component{
           <Route exact path='/' component={Home} ></Route>
           <Route path='/NewKombucha' render={()=><NewKombucha onKombuchaCreation={this.handleNewKombucha} />} ></Route>
           <Route path='/KombuchaControl' render={()=><KombuchaControl kombuchalist={this.state.MasterList}/>}></Route>
+          <Route path='/KombuchaControl2' render={() => <KombuchaControl kombuchalist2={this.state.MasterList2} />}></Route>
         </Switch>
       </div>
    

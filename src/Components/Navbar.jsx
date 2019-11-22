@@ -40,7 +40,7 @@ function Navbar() {
             <Link to="/" style={logo}>Kombucha </Link>
             <Link to="/KombuchaControl" style={modelX}>GT's</Link>
             <Link to="/NewKombucha" style={modelX}>Add new Kombucha</Link>
-           </div>
+          </div>
         </nav>
       </div>
     </div>

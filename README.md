@@ -10,7 +10,7 @@ _In this application Employees can keep track of inventory of kombucha and Coust
 
 ## Setup/Installation Requirements
 
-* _Clone this repository https://github.com/nehamalhotra23/Tap-Room.git_
+* _Clone this repository https://github.com/nehamalhotra23/TapRoom_
 * _Run "npm intall" in the root directory_
 * _Run "npm run start" and navigate to  http://localhost:8080/#/_
 
