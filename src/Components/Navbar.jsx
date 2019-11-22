@@ -38,7 +38,7 @@ function Navbar() {
         <nav>
           <div style={navDiv}>
             <Link to="/" style={logo}>Kombucha </Link>
-            <Link to="/KombuchaControl" style={modelX}>GT's</Link>
+            <Link to="/KombuchaControl" style={modelX}>List Of kegs</Link>
             <Link to="/NewKombucha" style={modelX}>Add new Kombucha</Link>
           </div>
         </nav>

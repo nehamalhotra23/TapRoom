@@ -45,7 +45,7 @@ function NewKombucha(props) {
       </div>
       <div style={form} className="form-group col-md-6">
         <h1>Add a new Kombucha: </h1><br />
-        <form onSubmit={handleNewKombucha}>
+        <form onSubmit={handleNewKombucha} >
           <input
             type='text'
             id='name'

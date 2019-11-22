@@ -11,7 +11,6 @@ class App extends React.Component{
      
     this.state = {
       MasterList: [],
-      MasterList2: []
     };
     this.handleNewKombucha = this.handleNewKombucha.bind(this);
   }
@@ -29,7 +28,6 @@ class App extends React.Component{
           <Route exact path='/' component={Home} ></Route>
           <Route path='/NewKombucha' render={()=><NewKombucha onKombuchaCreation={this.handleNewKombucha} />} ></Route>
           <Route path='/KombuchaControl' render={()=><KombuchaControl kombuchalist={this.state.MasterList}/>}></Route>
-          <Route path='/KombuchaControl2' render={() => <KombuchaControl kombuchalist2={this.state.MasterList2} />}></Route>
         </Switch>
       </div>
    
