@@ -2,7 +2,6 @@ import React from 'react';
 import Kombucha from './Kombucha';
 import PropTypes from 'prop-types';
 
-
 function KombuchaControl(props) {
   return (
     <div>

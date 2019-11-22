@@ -19,17 +19,6 @@ function Navbar() {
     textDecoration: 'none',
     color: '#fff'
   };
-  var navbarRight = {
-    float: 'right',
-    textDecoration: 'none',
-    padding: '10px',
-    color: '#fff',
-    fontFamily: 'Arial',
-    fontWeight: '900',
-    '&:hover': {
-      textDecoration: 'underline'
-    }
-  };
 
   var center = {
     textDecoration: 'none',
@@ -62,11 +51,8 @@ function Navbar() {
         <nav>
           <div style={navDiv}>
             <Link to="/" style={logo}>Kombucha </Link>
-            <Link to="/Gt" style={modelX}>GT's</Link>
-            <Link to="/Remedy" style={center}>Remedy</Link>
+            <Link to="/KombuchaControl" style={modelX}>GT's</Link>
             <Link to="/NewKombucha" style={center}>Add new Kombucha</Link>
-            <Link to="/SignIn" style={navbarRight} >SIGN IN</Link>
-            <Link to="/NewEmployee" style={navbarRight} >SIGN UP</Link>
           </div>
         </nav>
       </div>

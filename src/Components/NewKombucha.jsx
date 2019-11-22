@@ -1,5 +1,5 @@
 import React from 'react';
-import newkombucha from '../Assets/Img/newkombucha.jpg';
+
 import { v4 } from 'uuid';
 import PropTypes from 'prop-types';
 
@@ -39,46 +39,37 @@ function NewKombucha(props) {
   return (
 
     <div style={background} className="row">
-      <div className="col-md-6">
-        <img style={image} src={newkombucha} />
-      </div>
-      <div style={form} className="form-group col-md-6">
-        <h1>Add a new Kombucha: </h1><br />
-        <form onSubmit={handleNewKombucha}>
-          <input
-            type='text'
-            id='name'
-            placeholder='name'
-            ref={(input) => { _name = input; }} />
-          <input
-            type='text'
-            id='price'
-            placeholder='price'
-            ref={(input) => { _price = input; }} />
-          <input
-            type='text'
-            id='flavour'
-            placeholder='flavour'
-            ref={(input) => { _flavour = input; }} />
-          <input
-            type='text'
-            id='photo'
-            placeholder='photo'
-            ref={(input) => { _photo = input; }} />
-          <select className="form-control" ref={(select) => { _kombucha = select; }}>
-            <option selected> Select your Brand...</option>
-            <option value='Gt'  >Gt's</option>
-            <option value='Remedy'>Remedy</option>
-          </select><br />
-          <button type='submit'>Add</button>
-        </form>
-        <nav class="navbar navbar-light bg-light">
-          <a class="navbar-brand" href="#">
-            <button className="btn btn-secondary">Home</button>
-          </a>
-        </nav>
-      </div>
+     
+      <form onSubmit={handleNewKombucha}>
+        <input
+          type='text'
+          id='name'
+          placeholder='name'
+          ref={(input) => { _name = input; }} />
+        <input
+          type='text'
+          id='price'
+          placeholder='price'
+          ref={(input) => { _price = input; }} />
+        <input
+          type='text'
+          id='flavour'
+          placeholder='flavour'
+          ref={(input) => { _flavour = input; }} />
+        <input
+          type='text'
+          id='photo'
+          placeholder='photo'
+          ref={(input) => { _photo = input; }} />
+        <select className="form-control" ref={(select) => { _kombucha = select; }}>
+          <option > Select your Brand...</option>
+          <option value='Gt'  >Gt's</option>
+          <option value='Remedy'>Remedy</option>
+        </select><br />
+        <button type='submit'>Add</button>
+      </form>
     </div>
+
   );
 }
 

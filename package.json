@@ -1,5 +1,5 @@
 {
-  "name": "tap-room",
+  "name": "vote-site",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -9,16 +9,16 @@
     "lint": "eslint src/** src/**/**; exit 0",
     "lint-fix": "eslint src/** src/**/** --fix; exit 0"
   },
+  "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "prop-types": "^15.5.10",
-    "react": "^15.6.2",
-    "react-dom": "^15.6.2",
-    "react-image": "^2.2.1",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
     "react-router-dom": "^4.0.0",
     "styled-jsx": "^3.2.4",
-    "video-react": "^0.14.1"
+    "uuid": "^3.2.1"
   },
   "devDependencies": {
     "babel-core": "^6.24.1",
@@ -27,12 +27,12 @@
     "babel-preset-react": "^6.24.1",
     "eslint": "^4.13.1",
     "eslint-loader": "^3.0.2",
-    "eslint-plugin-react": "^7.16.0",
+    "eslint-plugin-react": "^7.10.0",
     "file-loader": "^1.1.6",
     "html-webpack-plugin": "^2.29.0",
     "react-hot-loader": "^3.0.0-beta.7",
     "url-loader": "^0.6.2",
     "webpack": "^3.4.0",
-    "webpack-dev-server": "^2.5.0"
+    "webpack-dev-server": "^2.11.5"
   }
 }

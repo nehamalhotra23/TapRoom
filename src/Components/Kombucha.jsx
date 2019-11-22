@@ -34,12 +34,12 @@ class Kombucha extends React.Component {
         
       <div className="row" style={card}>
         <div className="col-md-12">  
-          <img style={image} src={this.props.photo} />
+          {/* <img style={image} src={this.props.photo} /> */}
           <div>
             <p>Name: {this.props.name}</p>
             <p>Price: {this.props.price}</p>
             <p>Brand: {this.props.kombucha}</p>
-            <p>photo: {this.props.photo}</p>
+            <img>photo: {this.props.photo}</img>
             <p>description: {this.props.flavour}</p>
           </div> 
         </div>

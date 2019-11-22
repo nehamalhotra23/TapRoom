@@ -1,6 +1,6 @@
 const webpack = require('webpack');
 const { resolve } = require('path');
-const HtmlWebpackPlugin = require('html-webpack-plugin')
+const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
 
@@ -8,7 +8,7 @@ module.exports = {
     'react-hot-loader/patch',
     'webpack-dev-server/client?http://localhost:8080',
     'webpack/hot/only-dev-server',
-    resolve(__dirname, "src") + "/index.jsx"
+    resolve(__dirname, "src", "index.jsx")
   ],
 
   output: {
@@ -21,11 +21,13 @@ module.exports = {
     extensions: ['.js', '.jsx']
   },
   devtool: '#source-map',
+
   devServer: {
     hot: true,
     contentBase: resolve(__dirname, 'build'),
     publicPath: '/'
   },
+
   module: {
     rules: [
       {
@@ -48,39 +50,31 @@ module.exports = {
           }
         }
       },
-      
-      {
-        test:/\.css$/,
-        use: [
-          'style-loader',
-          'css-loader'
-        ]
-      },
       {
         test: /\.jsx?$/,
-        loader: 'babel-loader',
+        loader: "babel-loader",
         exclude: /node_modules/,
         options: {
           presets: [
-            ['es2015', {'modules': false}],
-            'react',
+            ["es2015", { "modules": false }],
+            "react",
           ],
           plugins: [
-            'react-hot-loader/babel',
+            "react-hot-loader/babel",
+            "styled-jsx/babel"
           ]
         }
       }
-    ]
+    ],
   },
-
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
     new webpack.NamedModulesPlugin(),
     new HtmlWebpackPlugin({
       template: 'template.ejs',
       appMountId: 'react-app-root',
-      title: 'tap-room',
-      filename: resolve(__dirname, 'build', 'index.html'),
+      title: 'Vote Site',
+      filename: resolve(__dirname, "build", "index.html"),
     }),
   ]
-}
+};

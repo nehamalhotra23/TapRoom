@@ -1,8 +1,8 @@
 import React from 'react';
 import NewKombucha from './NewKombucha';
 import { Switch, Route } from 'react-router-dom';
-import MainPage from './MainPage';
-// import Error404 from './Error404';
+import Home from './Home';
+import Navbar from './Navbar';
 import KombuchaControl from './KombuchaControl';
 
 class App extends React.Component{
@@ -20,19 +20,18 @@ class App extends React.Component{
     temp.push(newKombucha);
     this.setState({MasterList: temp});
   }
-    
-
   render() {
     return (
-      <div >
+  
         <div className='container'>
+          <Navbar/>
           <Switch>
-            <Route exact path='/' component={MainPage} ></Route>
+            <Route exact path='/' component={Home} ></Route>
             <Route path='/NewKombucha' render={()=><NewKombucha onKombuchaCreation={this.handleNewKombucha} />} ></Route>
             <Route path='/KombuchaControl' render={()=><KombuchaControl kombuchalist={this.state.MasterList}/>}></Route>
           </Switch>
         </div>
-      </div>
+   
     );
   }
 }
