@@ -39,35 +39,37 @@ function NewKombucha(props) {
   return (
 
     <div style={background} className="row">
-     
-      <form onSubmit={handleNewKombucha}>
+      <div style={form}>
+        <h1>Add a new Kombucha: </h1><br />
+     <form onSubmit={handleNewKombucha}>
         <input
           type='text'
           id='name'
           placeholder='name'
-          ref={(input) => { _name = input; }} />
+          ref={(input) => { _name = input; }} /> <br/>
         <input
           type='text'
           id='price'
           placeholder='price'
-          ref={(input) => { _price = input; }} />
+          ref={(input) => { _price = input; }} /> <br/>
         <input
           type='text'
           id='flavour'
           placeholder='flavour'
-          ref={(input) => { _flavour = input; }} />
+          ref={(input) => { _flavour = input; }} /> <br/>
         <input
           type='text'
           id='photo'
           placeholder='Add Image Url'
-          ref={(input) => { _photo = input; }} />
+          ref={(input) => { _photo = input; }} /> <br/>
         <select className="form-control" ref={(select) => { _kombucha = select; }}>
           <option > Select your Brand...</option>
           <option value='Gt'  >Gt's</option>
           <option value='Remedy'>Remedy</option>
-        </select><br />
+        </select><hr />
         <button type='submit'>Add</button>
       </form>
+      </div>
     </div>
 
   );

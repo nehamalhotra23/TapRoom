@@ -7,7 +7,7 @@ function Navbar() {
     paddingBottom: '30px',
     position: 'absolute',
     top: '0',
-    width: '200%',
+    width: '500%',
     zIndex: '1',
     backgroundColor: 'rgba(0, 0, 0, 0.5)'
   };
@@ -41,13 +41,17 @@ function Navbar() {
     '&:hover': {
       textDecoration: 'underline'
     }
+    
+  };
+  var navDiv = {
+    marginRight: '5%'
   };
   
   return (
     <div style={navigation}>
       <div className="header">
         <nav>
-          <div >
+          <div style={navDiv}>
             <Link to="/" style={logo}>Kombucha </Link>
             <Link to="/KombuchaControl" style={modelX}>GT's</Link>
             <Link to="/NewKombucha" style={center}>Add new Kombucha</Link>

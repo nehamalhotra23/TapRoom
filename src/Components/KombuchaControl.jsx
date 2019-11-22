@@ -8,11 +8,14 @@ function KombuchaControl(props) {
     display: 'flex',
     justifyContent: 'space-between',
     marginTop: '100px',
-    padding: "20px"
+    padding: '20px'
   };
   var margin = {
     color: 'red'
   };
+  var back = {
+    backgroundColor: '#ffae42'
+  }
 
   function KombuchaListEmpty() {
     console.log(props.kombuchalist);
@@ -37,7 +40,7 @@ function KombuchaControl(props) {
     }
   }
   return (
-    <div>
+    <div style={back}>
       {KombuchaListEmpty()}
     </div>
   );
