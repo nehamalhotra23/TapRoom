@@ -1,6 +1,7 @@
 import React from 'react';
 import Kombucha from './Kombucha';
 import PropTypes from 'prop-types';
+import NoKombucha from './NoKombucha';
 
 function KombuchaControl(props) {
   var flex = {
@@ -18,7 +19,7 @@ function KombuchaControl(props) {
     if (props.kombuchalist.length == 0) {
       return (
         <div style={margin}>
-          <p>NO Kombucha</p>
+          <NoKombucha/>
         </div>
       );
     } else {
