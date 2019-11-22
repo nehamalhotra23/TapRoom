@@ -23,14 +23,14 @@ class App extends React.Component{
   render() {
     return (
   
-        <div className='container'>
-          <Navbar/>
-          <Switch>
-            <Route exact path='/' component={Home} ></Route>
-            <Route path='/NewKombucha' render={()=><NewKombucha onKombuchaCreation={this.handleNewKombucha} />} ></Route>
-            <Route path='/KombuchaControl' render={()=><KombuchaControl kombuchalist={this.state.MasterList}/>}></Route>
-          </Switch>
-        </div>
+      <div className='container'>
+        <Navbar/>
+        <Switch>
+          <Route exact path='/' component={Home} ></Route>
+          <Route path='/NewKombucha' render={()=><NewKombucha onKombuchaCreation={this.handleNewKombucha} />} ></Route>
+          <Route path='/KombuchaControl' render={()=><KombuchaControl kombuchalist={this.state.MasterList}/>}></Route>
+        </Switch>
+      </div>
    
     );
   }
