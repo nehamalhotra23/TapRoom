@@ -1,5 +1,5 @@
 import React from 'react';
-
+import kombuchaImg from "../Assets/Img/newKombucha.jpg"
 import { v4 } from 'uuid';
 import PropTypes from 'prop-types';
 
@@ -23,8 +23,8 @@ function NewKombucha(props) {
   }
 
   var image = {
-    height: '700px',
-    width: '600px',
+    height: '600px',
+    width: '400px',
     border: 'solid grey',
     borderRadius: '15px',
   };
@@ -35,33 +35,37 @@ function NewKombucha(props) {
   };
   var form = {
     marginTop: '30px',
+   
   };
   return (
 
     <div style={background} className="row">
-      <div style={form}>
+      <div className="col-md-6">
+        <img style={image} src={kombuchaImg} />
+      </div>
+      <div style={form} className="form-group col-md-6">
         <h1>Add a new Kombucha: </h1><br />
      <form onSubmit={handleNewKombucha}>
         <input
           type='text'
           id='name'
           placeholder='name'
-          ref={(input) => { _name = input; }} /> <br/>
+          ref={(input) => { _name = input; }} /> <hr/>
         <input
           type='text'
           id='price'
           placeholder='price'
-          ref={(input) => { _price = input; }} /> <br/>
+          ref={(input) => { _price = input; }} /> <hr/>
         <input
           type='text'
           id='flavour'
           placeholder='flavour'
-          ref={(input) => { _flavour = input; }} /> <br/>
+          ref={(input) => { _flavour = input; }} /> <hr/>
         <input
           type='text'
           id='photo'
           placeholder='Add Image Url'
-          ref={(input) => { _photo = input; }} /> <br/>
+          ref={(input) => { _photo = input; }} /> <hr/>
         <select className="form-control" ref={(select) => { _kombucha = select; }}>
           <option > Select your Brand...</option>
           <option value='Gt'  >Gt's</option>
