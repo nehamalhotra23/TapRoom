@@ -49,28 +49,28 @@ function NewKombucha(props) {
             type='text'
             id='name'
             placeholder='name'
-            ref={(input) => { _name = input; }} required/> <hr/>
+            ref={(input) => { _name = input; }}/> <hr/>
           <input
             type='text'
             id='price'
             placeholder='price'
-            ref={(input) => { _price = input; }} required /> <hr/>
+            ref={(input) => { _price = input; }}  /> <hr/>
           <input
             type='text'
             id='flavour'
             placeholder='flavour'
-            ref={(input) => { _flavour = input; }} required/> <hr/>
+            ref={(input) => { _flavour = input; }}/> <hr/>
           <input
             type='text'
             id='photo'
             placeholder='Add Image Url'
-            ref={(input) => { _photo = input; }} required/> <hr/>
+            ref={(input) => { _photo = input; }} /> <hr/>
           <select className="form-control" ref={(select) => { _kombucha = select; }}>
             <option > Select your Brand...</option>
             <option value='Gt'  >Gt's</option>
             <option value='Remedy'>Remedy</option>
           </select><hr />
-          <button type='submit'>Add</button>
+          <button className="btn btn-secondary" type='submit'>Add</button><hr/>
         </form>
       </div>
     </div>
