@@ -18,7 +18,8 @@ class Kombucha extends React.Component {
       webkitBoxShadow: ' 4px 5px 5px - 3px #000000',
       boxShadow: '4px 5px 5px - 3px #000000',
       overflow: 'hidden',
-      padding: '10px'
+      padding: '10px',
+      fontWeight: 'bold'
     };
     var image = {
       margin: '5 %',
@@ -31,10 +32,10 @@ class Kombucha extends React.Component {
       boxShadow: '0px 0px 6px - 2px #000000',
     };
     return (
-
+     
       <div style={card} className="card">
         <div className="card-image">
-        <img style={image} src={this.props.photo} />
+          <img style={image} src={this.props.photo} />
         </div>
         <p>Name: {this.props.name}</p>
         <p>Price: {this.props.price}</p>

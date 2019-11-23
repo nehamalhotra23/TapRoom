@@ -35,4 +35,4 @@ _HTML, CSS , React and Npm Packages_
 
 ### License
 
-Copyright (c) 2019 **{Neha Malhotra}**
+Copyright (c) 2019 **Neha Malhotra**

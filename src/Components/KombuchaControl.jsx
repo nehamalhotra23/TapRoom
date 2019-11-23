@@ -19,7 +19,6 @@ function KombuchaControl(props) {
   };
 
   function KombuchaListEmpty() {
-    console.log(props.kombuchalist);
     if (props.kombuchalist.length == 0) {
       return (
         <div style={margin}>
